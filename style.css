@@ -1,0 +1,714 @@
+:root{
+    --blue: #1e90ff;
+    --grey: #7c7c7c;
+    --black : rgb(36, 36, 36);
+    --bgColor : #f3f3f3;
+}
+
+redtag{
+    color: red;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: var(--bgColor);
+}
+
+/* --------------- HEADER SECTION START ---------------*/
+
+header{
+    position: relative;
+}
+.header_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:40px;
+    width: 100%;
+    padding: 0 120px;
+    background-color: var(--bgColor);
+    z-index: 1;
+}
+
+/* navigation start */
+.nav_list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav_list a{
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--black);
+}
+/* navigation end */
+/* Header start end*/
+/* --------------- HEADER SECTION END ---------------*/
+
+
+/* --------------- OFFER SECTION START ---------------*/
+@keyframes dropDownAnim {
+    0%{
+        transform: translateY(-100px); 
+    }100%{
+        transform: translateY(0); 
+    }
+}
+
+.offer_section{
+    height: 80px;
+    overflow: hidden;
+}
+
+.offer_text_container{
+    height: 100%;
+    padding: 15px 350px;
+    font-size: 15px;
+    text-align: center;
+    background-color: white;
+    line-height: 23px;
+    animation: dropDownAnim 1.3s ease-in-out;
+}
+
+.offer_text_container a{
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+/* --------------- OFFER SECTION END ---------------*/
+
+
+
+/* --------------- FIRST PAGE START ---------------*/
+
+main{
+    padding: 0 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.products_section{
+    margin-top: 150px;
+    width: 100%;
+    display: grid;
+    grid-column: auto auto auto;
+    gap: 15px;
+}
+
+/* main product left section start*/
+.products_section .left_container{
+    grid-column:1/3;
+    max-width: 600px;
+}
+
+.main_text_container h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--grey);
+    span{
+        color: var(--black);
+    }
+}
+/* main product left section end*/
+
+/* main products right section start */
+.products_section .right_container{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.two_services_container{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.service_section{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    gap: 15px;
+
+}
+
+.image_container{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image_container img{
+   width: 40px;
+}
+
+.text_container{
+    h5{
+        font-weight: 600;
+        color: var(--black);
+    }
+    a{
+        color: var(--blue);
+        text-decoration: none;
+    }
+    
+}
+
+.text_container a:hover{
+    text-decoration: underline;
+}
+
+/* main products right section end */
+
+/* products container start */
+.products_container{
+    grid-column:1/4;
+    height: auto;
+    margin-top: 50px;
+    width: calc(100vw - 240px);
+}
+
+.product_wrapper{
+    display: flex;
+    column-gap: 25px;
+    overflow-x: scroll;
+}
+
+.product_wrapper a{
+    text-decoration: none;
+}
+
+.product_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    width: 130px;
+}
+
+.product_card img{
+    width: 120px;
+}
+
+.product_card p{
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.product_card p:hover{
+    text-decoration: underline;
+}
+/* products container end */
+
+/* --------------- FIRST PAGE END ---------------*/
+
+
+
+/* --------------- SECOND PAGE START ---------------*/
+.second_page .image_card{
+    height: 500px;
+}
+
+.second_page .product_info{
+    width: 410px;
+}
+
+.second_page .image_card:nth-child(1){
+    background-image: url(image/second_page_images/store-card-40-macbook-air-202402.jpg);
+    
+}
+.second_page .image_card:nth-child(2){
+    color: white;
+    background-image: url(image/second_page_images/store-card-40-iphone-15-pro-2023.jpg);
+    
+}
+.second_page .image_card:nth-child(3){
+    color: white;
+    background-image: url(image/second_page_images/store-card-40-watch-s9-202309_GE.jpg);
+    
+}
+.second_page .image_card:nth-child(4){
+    background-image: url(image/second_page_images/store-card-40-ipad-202310_GEO_IN.jpg);
+    
+}
+.second_page .image_card:nth-child(5){
+    background-image: url(image/second_page_images/store-card-40-iphone-15-202309.jpg);
+    
+}
+.second_page .image_card:nth-child(6){
+    background-image: url(image/second_page_images/store-card-40-veteran-202309.jpg);
+    
+}
+.second_page .image_card:nth-child(7){
+    background-image: url(image/second_page_images/store-card-40-macbook-pro-202310.jpg);
+    
+}
+.second_page .image_card:nth-child(8){
+    background-image: url(image/second_page_images/store-card-40-watch-ultra-202309.jpg);
+    
+}
+.second_page .image_card:nth-child(9){
+    color: white;
+    background-image: url(image/second_page_images/store-card-40-ipad-pro-202210_GE.jpg);
+    
+}
+.second_page .image_card:nth-child(10){
+    background-image: url(image/second_page_images/store-card-40-watch-se-202403_GE.jpg);
+    
+}
+.second_page .image_card:nth-child(11){
+    background-image: url(image/second_page_images/store-card-40-watch-bands-202403.jpg);
+    
+}
+
+/* --------------- SECOND PAGE END ---------------*/
+
+
+
+/* --------------- THIRD PAGE END ---------------*/
+.third_page .image_card{
+    height: 500px;
+}
+
+.third_page .product_info{
+    width: 425px;
+}
+
+.third_page .image_card:nth-child(1){
+    background-image: url(image/third_page_images/store-card-50-specialist-help-20.jpg);
+}
+.third_page .image_card:nth-child(2){
+    color: white;
+    background-image: url(image/third_page_images/store-card-40-business-202209_GE.jpg);
+    
+}
+.third_page .image_card:nth-child(3){
+
+    background-image: url(image/third_page_images/store-card-50-TAA-202310.jpg)
+    
+}
+.third_page .image_card:nth-child(4){
+    background-image: url(image/third_page_images/iphone-card-50-personal-session.jpg);
+    
+}
+.third_page .image_card:nth-child(5){
+    background-image: url(image/third_page_images/apple-support-app-202308_GEO_IN.jpg);
+}
+
+.tp_last_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pi_bottom{
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    background-color: white;
+    color: #686868;
+    display: flex;
+}
+
+.pi_bottom p{
+    font-size: 13px;
+}
+
+.pi_bottom img{
+    width: 30px;
+}
+/* --------------- THIRD PAGE END ---------------*/
+
+
+
+/* --------------- FOURTH PAGE START ---------------*/
+.fourth_page .icon_card{
+    width: 230px;
+}
+
+.fourth_page .image_card{
+    padding: 30px;
+    background-color: white;
+}
+
+.fourth_page .icon{
+    width: 40px;
+}
+
+.fourth_page .icon img{
+    width: 100%;
+}
+
+.icon_card .text{
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.apple_colourful .text{
+    background-image: linear-gradient(90deg, #F8A969, #F37160, #997DCE, #759BEA, #74CEAD, #6ACBA5 );
+    background-clip: text;
+    color: transparent;
+}
+/* --------------- FOURTH PAGE END ---------------*/
+
+
+
+/* --------------- FIFTH PAGE END ---------------*/
+.image_card:first-child>.product_info, .image_card:last-child>.product_info{
+    width: 420px;
+}
+
+.fifth_page .product_info{
+    width: 350px;
+}
+
+.fifth_page .new_product{
+    background-image: url(image/fifth_page/store-card-40-accessories-202403.jpg);
+}
+
+.fifth_page .all_accessories{
+    background-image: url(image/fifth_page/store-card-40-accessories-explor.jpg);
+}
+
+.fifth_page .image_card{
+    background-color: white;
+}
+
+.fifth_page .image_card .acc_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.acc_colors > div{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.acc_colors li{
+    list-style: none;
+}
+
+.acc_colors img{
+    height: 15px;
+}
+
+.fifth_page .image_card .acc_image_img {
+    height: 70%;
+}
+
+.fifth_page .product_info .header{
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+/* --------------- FIFTH PAGE END ---------------*/
+
+
+
+/* --------------- SIXTH PAGE END ---------------*/
+.sixth_page .new_product{
+    background-image: url(image/sixth_page/store-card-40-applemusic-202301.jpg);
+    background-size: 80%;
+    background-position: center;
+}
+
+.sixth_page .product_info{
+    width: 350px;
+}
+
+.sixth_page .image_card{
+    background-color: white;
+}
+
+.sixth_page .image_card .acc_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.acc_colors > div{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.acc_colors li{
+    list-style: none;
+}
+
+.acc_colors img{
+    height: 15px;
+}
+
+.sixth_page .image_card .acc_image_img {
+    height: 70%;
+}
+
+.sixth_page .product_info .header{
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px 0 15px;
+}
+
+/* --------------- SIXTH PAGE END ---------------*/
+
+
+
+/* --------------- SEVENTH PAGE START ---------------*/
+.seventh_page .image_card{
+    height: 550px;
+    aspect-ratio: 1/1 ;
+}
+
+.seventh_page .image_card:nth-child(1){
+    color: white;
+    background-image: url(image/seventh_page/store-card-50-tv-services-202303.jpg);
+}
+.seventh_page .image_card:nth-child(2){
+    background-image: url(image/seventh_page/store-card-50-subscriptions-2021.jpg);
+}
+.seventh_page .image_card:nth-child(3){
+    background-image: url(image/seventh_page/store-card-50-applecare-202309.jpg);
+}
+.seventh_page .image_card:nth-child(4){
+    background-image: url(image/seventh_page/store-card-50-homekit-202309_GEO.jpg);
+}
+/* --------------- SEVENTH PAGE END ---------------*/
+
+
+
+/* --------------- EIGHT PAGE START ---------------*/
+.eight_page .image_card{
+    height: 550px;
+}
+
+.eight_page .image_card{
+    background-position: center;
+    background-size: cover;
+    background-image: url(image/eight_page/store-mac-card-40-education-2024.jpg);
+}
+/* --------------- EIGHT PAGE END ---------------*/
+
+
+/* --------------- FOOTER PAGE START ---------------*/
+footer{
+    padding: 80px 110px 30px;
+}
+
+.ftr_links_under_heading{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 40px;
+}
+
+.ftr_h_link a{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+}
+
+.ftr_h_link a:hover{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+/* footer para */
+.ftr_content_container{
+    padding: 0 60px ;
+}
+.ftr_para{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+/* footer all links heading */
+.ftr_apple_link_heading{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.ftr_apple_link_heading img{
+    width: 20px;
+}
+.ftr_apple_link_heading span{
+    font-size: 13px;
+    color: rgb(78, 78, 78);
+}
+
+/* footer all */
+.ftr_all_links{
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftr_all_links ul[title]:before{
+    content: attr(title);
+    font-weight: 600;
+}
+
+.ftr_all_links li{
+    list-style: none;
+    padding-top: 8px;
+}
+
+.ftr_all_links a{
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+}
+
+.ftr_all_links a:hover{
+    text-decoration: underline;
+}
+
+/* footer bottom */
+.ftr_bottom_container{
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+}
+
+.ftr_sml_para{
+    border-bottom: 1px solid  rgba(136, 136, 136, 0.397);
+    padding-bottom: 10px;
+}
+
+.ftr_sml_para a{
+    color: var(--blue);
+}
+
+.ftr_bottom_content{
+    display: flex;
+    gap: 40px;
+    padding-top: 15px;
+}
+
+.ftr_bottom_content a{
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}
+.ftr_bottom_content a:hover{
+    text-decoration: underline;
+}
+/* --------------- FOOTER PAGE END ---------------*/
+
+
+
+/* --------------- COMMON STYLE START ---------------*/
+
+/* scroll bar star */
+::-webkit-scrollbar{
+    height: 5px;   
+}
+
+::-webkit-scrollbar-thumb{
+    cursor: grab;
+    border-radius: 3px;
+    background-color: rgba(32, 32, 32, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #00000025;
+}
+/* scroll bar end */
+
+/* card page section start */
+.page_container{
+    width: 100%;
+}
+
+.page_heading h2{
+    font-size: 30px;
+    color: gray;
+    padding-bottom: 30px;
+}
+
+.page_heading span{
+    color: black;
+}
+
+.image_card_container{
+    height: fit-content;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.image_card{
+    border-radius: 18px;
+    background-size: cover;
+    background-position: center;
+    transition: .4s;
+}
+
+.image_card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.product_info{
+    padding: 30px;
+}
+
+.product_info h3{
+    font-size: 12px;
+    font-weight: 100;
+    color: inherit;
+    filter: invert(.2);
+}
+
+.product_info .info_header{
+    color: inherit;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 15px 0;
+}
+.product_info p{
+    color: inherit;
+}
+.page_container sup{
+    font-size: 15px;
+    font-weight: 100;
+}
+/* card page section end */
+
+.new_key_space{
+    height: 13px;
+    padding-bottom: 20px;
+}
+/* --------------- COMMON STYLE END ---------------*/
